@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Shopping Cart</string>
+    <string name="product_name_placeholder">Ron Brugal</string>
+    <string name="product_price_placeholder">$475.00</string>
+    <string name="product_image_content_description">Product Image</string>
+    <string name="products_not_available_error">Could not get products</string>
+</resources>
