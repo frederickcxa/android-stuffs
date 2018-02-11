@@ -6,7 +6,7 @@ Playground to practice and play around with tecnologies that helps to develop An
 
 ## Variants
 
-- [Shopping Cart](https://github.com/frederickcxa/android-stuffs/tree/master/shopping-cart).
+- [Doit](https://github.com/frederickcxa/android-stuffs/tree/master/doit)
 - [Shopping Cart MVP](https://github.com/frederickcxa/android-stuffs/tree/master/shopping-cart-mvp).
 - [Shopping Cart Arquitecture Components](https://github.com/frederickcxa/android-stuffs/tree/master/shopping-cart-ac).
 - [Shopping Cart Firebase](https://github.com/frederickcxa/android-stuffs/tree/master/shopping-cart-firebase).

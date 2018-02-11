@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/todosRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/addTodoField"
+        tools:listitem="@layout/item_todo"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addTodoFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/padding_standard"
+        android:layout_marginEnd="@dimen/padding_standard"
+        android:layout_marginRight="@dimen/padding_standard"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="@color/colorWhite"
+        android:visibility="gone"
+        app:backgroundTint="@color/colorAccent"
+        app:fabSize="normal"
+        tools:visibility="visible"/>
+
+    <EditText
+        android:id="@+id/addTodoField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/padding_standard"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:layout_marginRight="@dimen/padding_small"
+        android:layout_toLeftOf="@id/addTodoFab"
+        android:layout_toStartOf="@id/addTodoFab"
+        android:hint="@string/todo_field_hint"/>
+
+    <TextView
+        android:id="@+id/emptyListText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/no_todos_registered_text"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+</RelativeLayout>
